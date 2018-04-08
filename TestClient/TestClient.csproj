@@ -53,7 +53,7 @@
       <Project>{e42ee835-0b67-4db6-a41c-b74db23a01a9}</Project>
       <Name>API</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Client.csproj">
+    <ProjectReference Include="..\Client\Client.csproj">
       <Project>{55d26684-afe1-4bbe-9e4e-a77210d99dd8}</Project>
       <Name>Client</Name>
     </ProjectReference>
