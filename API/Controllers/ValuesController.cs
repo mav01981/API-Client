@@ -11,6 +11,7 @@ namespace API.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
+        [CompressResponse]
         public IEnumerable<Person> Get()
         {
             return new Person[]
@@ -35,8 +36,21 @@ namespace API.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public IEnumerable<Person> Post([FromBody]string value)
         {
+            return new Person[]
+    {
+                new Person()
+                {
+                    Name = "James",
+                    Age = 21
+                },
+                    new Person()
+                {
+                    Name = "Jon",
+                    Age = 21
+                }
+    };
         }
 
         // PUT api/values/5
